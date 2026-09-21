@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+.calculator {
+  background-color: #22252d;
+  width: 320px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 디스플레이 디자인 */
+.display {
+  background-color: #292d36;
+  border-radius: 12px;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.previous-operand {
+  color: #888d97;
+  font-size: 1.1rem;
+  min-height: 1.4rem;
+}
+
+.current-operand {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* 버튼 그리드 배치 */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* 기본 버튼 스타일 */
+.btn {
+  border: none;
+  outline: none;
+  background-color: #292d36;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 12px;
+  height: 60px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #353a45;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* 2칸 차지하는 버튼 */
+.span-two {
+  grid-column: span 2;
+}
+
+/* 연산자 버튼 스타일 */
+.btn-operator {
+  color: #f05959;
+}
+
+/* C, DEL 버튼 스타일 */
+.btn-action {
+  color: #26e3a0;
+}
+
+/* = 버튼 스타일 */
+.btn-equals {
+  background-color: #f05959;
+  color: #ffffff;
+}
+
+.btn-equals:hover {
+  background-color: #e04848;
+}
+

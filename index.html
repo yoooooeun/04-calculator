@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계산기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <!-- 계산 결과 및 입력값 표시 화면 -->
+    <div class="display">
+      <div id="previous-operand" class="previous-operand"></div>
+      <div id="current-operand" class="current-operand">0</div>
+    </div>
+
+    <!-- 버튼 그리드 영역 -->
+    <div class="buttons">
+      <button id="clear-btn" class="btn btn-action span-two">C</button>
+      <button class="btn btn-action" data-action="delete">DEL</button>
+      <button class="btn btn-operator" data-operator="÷">÷</button>
+      
+      <button class="btn" data-number="7">7</button>
+      <button class="btn" data-number="8">8</button>
+      <button class="btn" data-number="9">9</button>
+      <button class="btn btn-operator" data-operator="×">×</button>
+      
+      <button class="btn" data-number="4">4</button>
+      <button class="btn" data-number="5">5</button>
+      <button class="btn" data-number="6">6</button>
+      <button class="btn btn-operator" data-operator="-">-</button>
+      
+      <button class="btn" data-number="1">1</button>
+      <button class="btn" data-number="2">2</button>
+      <button class="btn" data-number="3">3</button>
+      <button class="btn btn-operator" data-operator="+">+</button>
+      
+      <button class="btn" data-number=".">.</button>
+      <button class="btn" data-number="0">0</button>
+      <button id="equals-btn" class="btn btn-equals span-two">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
