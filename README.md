@@ -12,7 +12,7 @@ Gemini로 코드를 생성하고, GitHub Pages로 배포하는 전체 과정을 
 
 ## 배포 링크
 
-- (여기에 본인의 GitHub Pages 링크를 채워넣으세요)
+- https://yoooooeun.github.io/04-calculator/
 
 ## 실습 안내
 
